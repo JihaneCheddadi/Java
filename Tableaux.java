@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class tableaux {
+class Tableaux {
     public static void main(String[] args) {
         Scanner keyboard=new Scanner(System.in);
         int scores[]={18,10,16};
