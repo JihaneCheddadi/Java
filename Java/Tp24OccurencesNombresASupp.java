@@ -1,5 +1,5 @@
 
-import java.util.ArrayList;
+/*import java.util.ArrayList;
 import java.util.Scanner;
 class Tp24OccurencesNombresASupp {
 
@@ -58,4 +58,4 @@ class Tp24OccurencesNombresASupp {
 
 
     }
-}
+}*/
