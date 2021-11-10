@@ -1,5 +1,7 @@
 package Javapoo;
 
+import com.sun.management.UnixOperatingSystemMXBean;
+
 import java.util.Scanner;
 
 class Personne {
@@ -8,6 +10,14 @@ class Personne {
     private String pays;
     private boolean estMarie;
     private int nombreEnfants;
+
+    public Personne(String nom,String prenom, String pays, boolean estMarie ,int nombreEnfants){
+        this.nom=nom;
+        this.prenom=prenom;
+        this.pays = pays;
+        this.estMarie = estMarie;
+        this.nombreEnfants = nombreEnfants;
+    }
 
     public String getNom(){
         return nom;
@@ -57,14 +67,14 @@ class Personne {
 
 class Main{
     public static void main(String[] args) {
-        Personne moi=new Personne();
-        Personne lui=new Personne();
-        lui.setNom("Jean");
-        moi.setNom("Lisangola");
-        moi.setPrenom("Christian");
-        moi.setPays("Citoyen du Monde");
-        moi.setEstMarie(false);
-        moi.setNombreEnfants(0);
+        Personne moi=new Personne("Jihane","Cheddadi","Maroc",true, 1);
+
+
+        //moi.setNom("Lisangola");
+        //moi.setPrenom("Christian");
+        //moi.setPays("Citoyen du Monde");
+       // moi.setEstMarie(false);
+       // moi.setNombreEnfants(0);
         System.out.println("Nom : "+moi.getNom());
         System.out.println("Prenom : "+moi.getPrenom());
         System.out.println("Nom complet : "+moi.nomComplet());
