@@ -13,11 +13,28 @@ public class Auteur {
 
     }
 
+
+
     public String getNom() {
         return nom;
     }
 
-    public boolean getprime() {
+    public boolean getPrix() {
         return prime;
     }
+
+    @Override
+    public String toString() {
+        return "Auteur{" +
+                "nom='" + nom + '\'' +
+                ", prime=" + prime +
+                '}';
+    }
+}
+class MainAuteur{
+    public static void main(String[] args) {
+        Auteur jiji=new Auteur("jihane",true);
+        System.out.println(jiji);
+    }
+
 }

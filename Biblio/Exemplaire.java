@@ -1,25 +1,28 @@
 package Biblio;
 
-public class Exemplaire extends Oeuvre {
+public class Exemplaire {
+    private Oeuvre oeuvre;
 
-
-    public Exemplaire(String titre, String nom, String langue) {
-        super(titre, nom, langue);
-        System.out.println("Nouvelle exemplaire -->");
-    }
-    public Exemplaire(Exemplaire Exem){
-        super(Exem.getTitre(),Exem.getNom(),Exem.getLangue() );
-        System.out.println("Copie d’un exemplaire de -->");
-
+    public Exemplaire(Oeuvre oeuvre) {
+        this.oeuvre = oeuvre;
+        System.out.println("Nouvelle exemplaire");
     }
 
-    @Override
-    public String Tostring() {
-        return super.Tostring();
+    public Exemplaire(Exemplaire exemplaire) {
+        this.oeuvre = exemplaire.oeuvre;
+        System.out.println("Copie d'un exemplaire");
     }
 
-    //@Override
-    //public String getOeuvre() {
-    //    return super.getTitre();
-    //}
+    public Oeuvre getOeuvre() {
+        return oeuvre;
+    }
+
+    public String afficher() {
+        return oeuvre.getTitre() + " ," + oeuvre.getAuteur().getNom() + " , en " + oeuvre.getLangue();
+    }
 }
+
+
+
+
+

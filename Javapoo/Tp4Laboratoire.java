@@ -57,7 +57,7 @@ class Souris{
     public void vieillir() {
 
         this.age++;
-        if((iscloned) && (age>esperanceVie/2)){
+        if((iscloned) && ( this.age > (0.5*this.esperanceVie))){
             this.couleur="verte";
 
         }
@@ -80,8 +80,8 @@ public class Tp4Laboratoire {
         System.out.println(nouvelleSouris);
         System.out.println(dexiemeSouris);
         System.out.println(sourisClonee);
-        nouvelleSouris.evolue();
-        System.out.println(nouvelleSouris);
+        sourisClonee.evolue();
+        System.out.println(sourisClonee);
         dexiemeSouris.evolue();
         System.out.println(dexiemeSouris);
     }
